@@ -1,0 +1,5 @@
+impl Solution {
+    pub fn range_bitwise_and(left: i32, right: i32) -> i32 {
+        ((left+1)..=right).fold(left, |acc, a| acc & a)
+    }
+}
